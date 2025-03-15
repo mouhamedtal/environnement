@@ -10,41 +10,59 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mon Portfolio</a>
-        </div>
-    </nav>
+    
 
     <!-- Section Hero -->
-    <header class="text-center py-5 bg-primary text-white">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Développeur Web & Designer</p>
+    <style>
+        .nav-link {
+            font-size: 1.25rem; /* Ajustez la taille selon vos besoins */
+        }
+    </style>
+    
+    <header id="accueil" class="bg-primary text-white text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white text-center py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">MOUHAMED</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold mx-3" href="#accueil"><i class="fas fa-home"></i> Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold mx-3" href="#a-propos"><i class="fas fa-user"></i> À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold mx-3" href="#competences"><i class="fas fa-cogs"></i> Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold mx-3" href="#contact"><i class="fas fa-envelope"></i> Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    
 
-    <!-- Section Projets -->
-    <section class="container my-5">
-        <h2 class="text-center">Mes Projets</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="assets/img/projet1.jpg" class="card-img-top" alt="Projet 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Projet 1</h5>
-                        <p class="card-text">Description du projet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="assets/img/projet2.jpg" class="card-img-top" alt="Projet 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Projet 2</h5>
-                        <p class="card-text">Description du projet.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Section À Propos -->
+    <section id="a-propos" class="container my-5">
+        <h2 class="text-center">À Propos</h2>
+        <p class="text-center">Je suis un développeur web passionné par la création de sites modernes et performants.</p>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="container my-5">
+        <h2 class="text-center">Compétences</h2>
+        <p class="text-center">Maîtrise de HTML, CSS, JavaScript, et des frameworks comme Bootstrap.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact</h2>
+        <p class="text-center">Vous pouvez me contacter via email ou mes réseaux sociaux.</p>
     </section>
 
     <!-- Footer -->
