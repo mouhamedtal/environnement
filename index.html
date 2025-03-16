@@ -219,50 +219,71 @@
         }
     </style>
         <section id="realisations" class="container my-5">
-            <h2 class="text-center">Réalisations</h2>
-            <p class="text-center">Je suis fier de partager mes travaux et de mon travail de conception. Je suis fier de partager mes travaux et de mon travail de conception.</p>
+            <h2 class="text-center"><strong>Réalisations</strong></h2>
+            <div class="gallery">
+                <img src="assets/i4.jpeg" alt="Image 1">
+                <img src="assets/i2.jpeg" alt="Image 2">
+                <img src="assets/i3.jpeg" alt="Image 3">
+                <img src="assets/i1.jpeg" alt="Image 4">
+            </div>
         </section>
         
         <style>
             #realisations {
                 background-color: #f9f9f9; /* Fond clair */
-                padding: 50px 20px; /* Espacement autour */
-                border-radius: 10px; /* Coins arrondis */
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-                color: #333; /* Couleur du texte */
+                padding: 50px 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                color: #333;
+                text-align: center;
             }
         
             #realisations h2 {
-                font-size: 2.5rem; /* Taille du titre */
-                color: #007bff; /* Bleu attrayant */
-                margin-bottom: 20px; /* Espacement sous le titre */
-                text-transform: uppercase; /* Met en majuscules */
-                position: relative; /* Pour le soulignement */
+                font-size: 2.5rem;
+                color: #007bff;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                position: relative;
             }
         
             #realisations h2::after {
-                content: ""; /* Contenu vide pour le pseudo-élément */
+                content: "";
                 position: absolute;
-                bottom: -5px; /* Placer juste en dessous du titre */
-                left: 0;
-                width: 100%;
-                height: 3px; /* Hauteur du soulignement */
-                background-color: #007bff; /* Couleur du soulignement */
-                border-radius: 2px; /* Coins arrondis pour le soulignement */
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+                height: 3px;
+                background-color: #007bff;
+                border-radius: 2px;
             }
         
-            #realisations p {
-                font-size: 1.2rem; /* Taille du texte */
-                line-height: 1.5; /* Espacement entre les lignes */
-                max-width: 800px; /* Largeur maximale pour le texte */
-                margin: 0 auto; /* Centrer le paragraphe */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+                gap: 50px; /* Espacement entre les images */
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            .gallery img:hover {
+                transform: scale(1.05); /* Zoom léger au survol */
             }
         </style>
+        
     
 
     <!-- Section Contact -->
     <section id="contact" class="container my-5">
-        <h2 class="text-center">Contact</h2>
+        <h2 class="text-center"><strong>Contact</strong></h2>
         <div class="contact-details text-center">
             <p>
                 <a href="mailto:mouhamedtall778396956@gmail.com" class="btn btn-link">
